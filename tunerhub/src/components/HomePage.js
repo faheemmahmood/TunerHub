@@ -1,13 +1,12 @@
 import React from 'react';
-import './HomePage.css';
 
-const HomePage = () => {
+function HomePage() {
   return (
-    <div className="home-page">
+    <div>
       <h1>Welcome to TunerHub</h1>
       <p>Explore car modifications and more!</p>
     </div>
   );
-};
+}
 
 export default HomePage;

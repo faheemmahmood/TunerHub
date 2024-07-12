@@ -1,13 +1,12 @@
 import React from 'react';
-import './AboutPage.css';
 
-const AboutPage = () => {
+function AboutPage() {
   return (
-    <div className="about-page">
-      <h1>About TunerHub</h1>
-      <p>Learn more about our platform and mission.</p>
+    <div>
+      <h1>About Us</h1>
+      <p>Learn more about what we do.</p>
     </div>
   );
-};
+}
 
 export default AboutPage;
