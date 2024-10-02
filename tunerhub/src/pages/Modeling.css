@@ -1,9 +1,15 @@
 /* Modeling.css */
 .modeling-container {
-    background: url('https://example.com/path/to/car-image2.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 50px;
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    background-color: #1e1e1e; /* Background color */
 }
+
+canvas {
+    display: block; /* Prevent margin issues */
+}
+
+
 
 .modeling-header {
     font-size: 2.5rem;

@@ -1,18 +1,28 @@
-// Modeling.js
+// pages/Modeling.js
 import React from 'react';
-import './Modeling.css';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 
-function Modeling() {
-  return (
-    <div className="modeling">
-      <h2 className="section-title">Explore 3D Models</h2>
-      <div className="model-gallery">
-        <div className="model-card">
-          <img src="/assets/model1.jpg" alt="Model 1" />
+// Component to load and render the model
+const Model = () => {
+    const { scene } = useGLTF('/models/myModel.gltf'); // Update the path to your model
+
+    return <primitive object={scene} />;
+};
+
+const Modeling = () => {
+    return (
+        <div className="modeling-container">
+            <Canvas>
+                <ambientLight />
+                <pointLight position={[10, 10, 10]} />
+                <Model />
+                <OrbitControls />
+            </Canvas>
         </div>
-      </div>
-    </div>
-  );
-}
+    );
+    
+};
 
+// This will automatically load your GLTF model when the component mounts
 export default Modeling;
