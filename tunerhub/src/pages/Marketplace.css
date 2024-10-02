@@ -1,0 +1,30 @@
+/* Marketplace.css */
+.marketplace-container {
+    background: url('https://example.com/path/to/car-image3.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+}
+
+.marketplace-header {
+    font-size: 2.5rem;
+    color: #00d1b2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.marketplace-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.marketplace-product {
+    background-color: rgba(44, 44, 44, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.marketplace-product:hover {
+    transform: scale(1.05);
+}

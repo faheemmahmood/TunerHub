@@ -1,0 +1,49 @@
+/* Header.css */
+.header-container {
+    background-color: #1e1e1e;
+    padding: 15px 20px; /* Added padding for better spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Allows absolute positioning for dropdowns if needed */
+    z-index: 1000; /* Ensures the header is above other content */
+}
+
+.header-logo {
+    font-size: 2rem; /* Increased font size for better visibility */
+    color: #00d1b2;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px; /* Added padding for clickable area */
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #00d1b2; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        display: none; /* Hide by default */
+        position: absolute; /* Position dropdown */
+        top: 60px; /* Adjust as necessary */
+        left: 0; /* Align to the left */
+        background-color: #1e1e1e; /* Match the header background */
+        width: 100%; /* Full width */
+    }
+
+    .header-container:hover .header-nav {
+        display: flex; /* Show on hover */
+    }
+}
