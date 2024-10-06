@@ -1,0 +1,156 @@
+/* Home.css */
+
+.home-container {
+  background: url('https://example.com/path/to/car-image1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #7e3838;
+}
+
+.home-header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.home-subheader {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.home-button {
+  background-color: #00d1b2;
+  color: #1e1e1e;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #00bfa5;
+}
+
+.home-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.home-info div {
+  text-align: center;
+}
+
+/* General Page Fade In */
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color:#1e1e1e;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  padding: 15px 40px;
+  background-color: #00bfa6;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.button-hover:hover {
+  transform: scale(1.05);
+  background-color: #008f7a;
+}
+
+/* Car Carousel Section */
+.car-carousel-section {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.carousel img {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Home.css */
+.home-container {
+    background: url('https://example.com/path/to/car-image1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.home-header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.home-subheader {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.home-button {
+    background-color: #00d1b2;
+    color: #1e1e1e;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #00bfa5;
+}
+
+.home-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.home-info div {
+    text-align: center;
+}
