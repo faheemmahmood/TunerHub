@@ -1,7 +1,6 @@
 // Home.js
 import React from 'react';
 import './styles/Home.css';
-import CarCarousel from './CarCarousel'; // Include the carousel component
 function Home() {
   return (
     <div className="home fade-in">
@@ -11,10 +10,6 @@ function Home() {
         <button className="explore-btn button-hover">Explore Now</button>
       </section>
 
-      {/* Car Image Carousel Section */}
-      <section className="car-carousel-section">
-        <CarCarousel />
-      </section>
     </div>
   );
 }
